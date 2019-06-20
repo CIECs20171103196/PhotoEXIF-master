@@ -34,7 +34,7 @@ public class TestExifWriter {
      */
     public static void modifyEXIF() throws Exception {
         //原文件
-        InputStream fip = new BufferedInputStream(new FileInputStream("D://photo//vip.jpg")); // No need to buffer
+        InputStream fip = new BufferedInputStream(new FileInputStream("D://photo//11.jpg")); // No need to buffer
         LLJTran llj = new LLJTran(fip);
         try {
             llj.read(LLJTran.READ_INFO, true);
@@ -75,7 +75,7 @@ public class TestExifWriter {
 
 		llj.refreshAppx(); // Recreate Marker Data for changes done
 		// 改写后的文件，文件必须存在
-		OutputStream out = new BufferedOutputStream(new FileOutputStream("D://photo//11.jpg"));
+		OutputStream out = new BufferedOutputStream(new FileOutputStream("D://photo//vip.jpg"));
 		// Transfer remaining of image to output with new header.
 		llj.xferInfo(null, out, LLJTran.REPLACE, LLJTran.REPLACE);
         fip.close();

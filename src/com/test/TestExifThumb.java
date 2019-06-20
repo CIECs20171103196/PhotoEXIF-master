@@ -182,6 +182,6 @@ public class TestExifThumb {
 
 	public static void main(String arg[]) {
 		TestExifThumb t = new TestExifThumb();
-		t.test("C://Users//DELL//Desktop//old.jpg", "C://Users//DELL//Desktop//new1.jpg"); // 用11.jpg的数据替换22.jpg的缩略图
+		t.test("D://photo//11.jpg", "D://photo//vip.jpg"); // 用11.jpg的数据替换22.jpg的缩略图
 	}
 }

@@ -26,7 +26,7 @@ public class TestGpsReader {
 	 */
 	public static void readGps(){
 		try {
-			File jpegFile = new File("C://Users//DELL//Desktop//4.jpg");
+			File jpegFile = new File("D://photo//11.jpg");
 			Metadata metadata = JpegMetadataReader.readMetadata(jpegFile);
 //			Directory exif = metadata.getDirectory(ExifDirectory.class);// 这里要稍微注意下
 	        Directory gps = metadata.getDirectory(GpsDirectory.class);  
